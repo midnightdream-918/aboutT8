@@ -152,22 +152,19 @@
             position: relative;
             z-index: 2;
             text-align: center;
+            justify-self: end;
+            /* Căn về bên phải */
         }
+
 
         .profile-photo {
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #4A90E2, #2E5BBA);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-            color: white;
-            font-size: 4rem;
-            font-weight: bold;
-            box-shadow: 0 20px 40px rgba(74, 144, 226, 0.3);
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(5, 5, 68, 0.15);
         }
+
 
         /* Sections */
         .section {
@@ -339,11 +336,20 @@
                 display: none;
             }
 
-            .profile-photo {
-                width: 250px;
-                height: 250px;
-                font-size: 3rem;
+
+            @media (max-width: 768px) {
+                .profile-photo {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    box-shadow: 0 20px 40px rgba(74, 144, 226, 0.3);
+                    object-fit: cover;
+                    object-position: center;
+                    display: block;
+                }
             }
+
 
             .card-grid {
                 grid-template-columns: 1fr;
@@ -362,7 +368,7 @@
         <nav>
             <div class="logo">About me</div>
             <ul class="nav-links">
-                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#about" class="active">Thông tin cá nhân</a></li>
                 <li><a href="#skills">Kỹ năng</a></li>
                 <li><a href="#hobbies">Sở thích</a></li>
                 <li><a href="#dreams">Ước mơ</a></li>
@@ -376,37 +382,37 @@
             <div class="hero-content">
                 <h1 class="hero-title">Nguyễn Thị Ngọc Linh</h1>
                 <p class="hero-description">
-                    Passionate student with a love for technology, learning, and creating meaningful connections.
-                    Always eager to explore new opportunities and grow both personally and professionally.
+                    Hi, mình đến từ Hệ thống thông tin quản lý 65B, rất vui được gặp mọi người.
                 </p>
-                <a href="#about" class="cta-button">Learn More About Me</a>
+                <a href="#about" class="cta-button">Xem thêm</a>
             </div>
             <div class="hero-image">
-                <div class="profile-photo">YN</div>
+                <img src="/image/ning.png" alt="NgLing" class="profile-photo">
             </div>
+
         </div>
     </section>
 
     <!-- Personal Information -->
     <section class="section" id="about">
         <div class="container">
-            <h2 class="section-title">Personal Information</h2>
+            <h2 class="section-title">Thông tin cá nhân</h2>
             <div class="personal-grid">
                 <div class="personal-item">
-                    <div class="info-label">Full Name</div>
-                    <div class="info-value">Your Full Name</div>
+                    <div class="info-label">Họ và tên</div>
+                    <div class="info-value">Nguyễn Thị Ngọc Linh</div>
                 </div>
                 <div class="personal-item">
-                    <div class="info-label">Date of Birth</div>
-                    <div class="info-value">January 1, 2000</div>
+                    <div class="info-label">Ngày sinh</div>
+                    <div class="info-value">16/05/2005</div>
                 </div>
                 <div class="personal-item">
-                    <div class="info-label">Hometown</div>
-                    <div class="info-value">Your Hometown</div>
+                    <div class="info-label">Quê quán</div>
+                    <div class="info-value">Hà Tĩnh</div>
                 </div>
                 <div class="personal-item">
                     <div class="info-label">Email</div>
-                    <div class="info-value">your.email@example.com</div>
+                    <div class="info-value">11235614@st.neu.edu.vn</div>
                 </div>
             </div>
         </div>
@@ -415,33 +421,33 @@
     <!-- Acquired Knowledge -->
     <section class="section" id="skills">
         <div class="container">
-            <h2 class="section-title">Acquired Knowledge</h2>
+            <h2 class="section-title">Kỹ năng</h2>
             <div class="card-grid">
                 <div class="info-card">
                     <div class="card-icon">🌐</div>
-                    <h3 class="card-title">Languages</h3>
+                    <h3 class="card-title">Ngoại ngữ</h3>
                     <ul class="card-list">
-                        <li>Vietnamese (Native)</li>
-                        <li>English (Intermediate)</li>
-                        <li>Japanese (Basic)</li>
+                        <li>Tiếng Việt </li>
+                        <li>Tiếng Anh </li>
+                        <li>Tiếng Nhật (Newbie) </li>
                     </ul>
                 </div>
                 <div class="info-card">
                     <div class="card-icon">💻</div>
-                    <h3 class="card-title">Computer Skills</h3>
+                    <h3 class="card-title">Kỹ năng tin học</h3>
                     <ul class="card-list">
-                        <li>Microsoft Office Suite</li>
-                        <li>Adobe Photoshop</li>
-                        <li>Web Browsing & Research</li>
-                        <li>Data Analysis</li>
+                        <li>Tin học văn phòng cơ bản</li>
+                        <li>Power BI</li>
+                        <li>Một ít PS, Ai, Figma</li>
+                        <li>SPSS,...</li>
                     </ul>
                 </div>
                 <div class="info-card">
                     <div class="card-icon">⚡</div>
-                    <h3 class="card-title">Programming</h3>
+                    <h3 class="card-title">Kỹ năng lập trình</h3>
                     <ul class="card-list">
-                        <li>HTML & CSS</li>
-                        <li>JavaScript (Learning)</li>
+                        <li>C, C++</li>
+                        <li>SQL Server(Learning)</li>
                         <li>Python (Basic)</li>
                         <li>Git & GitHub</li>
                     </ul>
@@ -453,35 +459,29 @@
     <!-- Hobbies -->
     <section class="section" id="hobbies">
         <div class="container">
-            <h2 class="section-title">My Hobbies</h2>
+            <h2 class="section-title">Sở thích</h2>
             <div class="card-grid">
                 <div class="info-card">
-                    <div class="card-icon">⚽</div>
-                    <h3 class="card-title">Sports</h3>
-                    <div class="card-content">
-                        Love playing football and badminton. Regular gym-goer who believes in staying active and
-                        healthy.
-                    </div>
-                </div>
-                <div class="info-card">
                     <div class="card-icon">🎵</div>
-                    <h3 class="card-title">Music</h3>
+                    <h3 class="card-title">Âm nhạc</h3>
                     <div class="card-content">
-                        Enjoy listening to various genres of music and occasionally play guitar during free time.
+                        Chỉ cần cảm thấy hợp tai thì loại nhạc nào cũng nghe được, nhưng thích nhất là nhạc R&B.
                     </div>
                 </div>
                 <div class="info-card">
-                    <div class="card-icon">🤝</div>
-                    <h3 class="card-title">Volunteering</h3>
+                    <div class="card-icon">🎮</div>
+                    <h3 class="card-title">Game</h3>
                     <div class="card-content">
-                        Participate in community service activities and environmental protection programs.
+                        Mình khá thích chơi game nhưng không quá giỏi. Game mình chơi nhiều nhất: PUBG, LOL, Liên
+                        quân,...
                     </div>
                 </div>
                 <div class="info-card">
                     <div class="card-icon">📚</div>
                     <h3 class="card-title">Reading</h3>
                     <div class="card-content">
-                        Passionate about reading technology blogs, self-improvement books, and science fiction novels.
+                        Mình đọc được tất cả các thể loại sách, nhưng thích nhất là tiểu thuyết và manga (nhưng bây giờ
+                        thì ít đọc hơn rồi)
                     </div>
                 </div>
             </div>
@@ -491,20 +491,10 @@
     <!-- Dreams -->
     <section class="section dreams" id="dreams">
         <div class="container">
-            <h2 class="section-title">My Dreams</h2>
+            <h2 class="section-title">Ước mơ</h2>
             <div class="dream-content">
                 <p>
-                    My biggest dream is to become a skilled software developer who can create applications that make a
-                    positive impact on people's lives.
-                    I aspire to work for a technology company where I can contribute to innovative projects while
-                    continuously learning and growing.
-                </p>
-                <br>
-                <p>
-                    Beyond my career goals, I dream of traveling the world, experiencing different cultures, and using
-                    technology to bridge gaps between communities.
-                    I also hope to give back to society by mentoring young students who share the same passion for
-                    technology.
+                    Ước mơ của mình là có thể du lịch được nhiều nơi trên thế giới.
                 </p>
             </div>
         </div>
@@ -512,7 +502,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 midnightD. All rights reserved.</p>
     </footer>
 </body>
 
