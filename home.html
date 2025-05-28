@@ -4,11 +4,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT TEAM 8</title>
+    <title>TEAM 8 HOMEPAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Reset and basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #4A90E2;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #3b6cd5;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-bottom: 1px solid rgba(240, 234, 234, 0.2);
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Creative floating elements */
+        header::before {
+            content: '';
+            position: absolute;
+            top: -75px;
+            right: -75px;
+            width: 170px;
+            height: 170px;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            border-radius: 50%;
+            opacity: 0.9;
+            z-index: 1;
+            animation: float 6s ease-in-out infinite;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+        }
+
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 20px;
+        }
+
+        /* Team information section */
+        .team-info {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #2E5BBA;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-description {
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Table styling */
+        .table-container {
+            overflow-x: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #2E5BBA, #4A90E2);
+        }
+
+        th {
+            padding: 1rem;
+            text-align: left;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        th:first-child {
+            text-align: center;
+            width: 80px;
+        }
+
+        tbody tr {
+            transition: background-color 0.3s ease;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8f9ff;
+        }
+
+        tbody tr:hover {
+            background-color: #e6f2ff;
+            transform: scale(1.01);
+            transition: all 0.3s ease;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e6ed;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            text-align: center;
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: #4B85E2;
+            color: #FFFFFF;
+        }
+
+        .student-name {
+            font-weight: bold;
+            color: #2E5BBA;
+            font-size: 1.1rem;
+        }
+
+        .student-class {
+            color: #4A90E2;
+            font-weight: 600;
+        }
+
+        .student-id {
+            color: #666;
+            font-family: 'Courier New', monospace;
+        }
+
+        .about-me {
+            color: #555;
+            line-height: 1.5;
+            max-width: 300px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: white;
+            background-color: #2E5BBA;
+            margin-top: 2rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .team-info {
+                padding: 1rem;
+            }
+
+            th,
+            td {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .about-me {
+                max-width: 200px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .table-container {
+                font-size: 0.8rem;
+            }
+
+            th,
+            td {
+                padding: 0.3rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <p>This is out homepage</p>
+    <!-- Header -->
+    <header>
+        <h1>Homepage của Nhóm 8</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Team Information Section -->
+        <section class="team-info">
+            <h2 class="section-title">Bảng thông tin thành viên nhóm</h2>
+            <p class="section-description">
+                Đây là những thông tin của chúng mình, mọi người có thể tìm hiểu để hiểu hơn về nhóm của chúng mình.
+            </p>
+
+            <!-- Team Information Table -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ và tên</th>
+                            <th>Lớp</th>
+                            <th>Mã SV</th>
+                            <th>About Me</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="student-name">Nguyễn Thị Ngọc Linh</td>
+                            <td class="student-class">MIS65B</td>
+                            <td class="student-id">11235614</td>
+                            <td class="about-me"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="student-name">Trần Thanh Hiền</td>
+                            <td class="student-class">MIS65B</td>
+                            <td class="student-id">11235582</td>
+                            <td class="about-me"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="student-name">Hoàng Mỹ Dung</td>
+                            <td class="student-class">MIS65B</td>
+                            <td class="student-id">11235556</td>
+                            <td class="about-me"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="student-name">Trần Ngọc Nhân</td>
+                            <td class="student-class">IT65B</td>
+                            <td class="student-id">11236173</td>
+                            <td class="about-me"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="student-name">Nguyễn Quang Thành Vinh</td>
+                            <td class="student-class">KTH65</td>
+                            <td class="student-id">11232158</td>
+                            <td class="about-me"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Team 8's Product. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
