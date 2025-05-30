@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về tôi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #cfe7f4;
+            /* Màu nền xanh nhạt */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .header .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #70bff3;
+            margin-right: 20px;
+        }
+
+        .header .info {
+            flex: 1;
+            text-align: right;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            color: #34495e;
+            font-style: italic;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .info-table td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .info-table td:first-child {
+            font-weight: bold;
+            width: 30%;
+            color: #34495e;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background-color: #ecf0f1;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+        }
+
+        .highlight {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-radius: 5px;
+            font-style: italic;
+            text-align: center;
+            color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header với ảnh và tên -->
+        <div class="header">
+            <img src="Anh ca nha.jpg" alt="Ảnh cá nhân" class="profile-img">
+            <div class="info">
+                <h1>Trần Thanh Hiền</h1>
+                <p>Sinh viên năm hai - Ngành Hệ thống thông tin quản lý</p>
+            </div>
+        </div>
+
+        <!-- Thông tin cá nhân -->
+        <div class="section">
+            <h2>📋 Thông tin cá nhân</h2>
+            <table class="info-table">
+                <tr>
+                    <td>Họ và tên:</td>
+                    <td>Trần Thanh Hiền</td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh:</td>
+                    <td>16/06/2005</td>
+                </tr>
+                <tr>
+                    <td>Quê quán:</td>
+                    <td>Hà Tĩnh, Việt Nam</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><a href="mailto:11235582@st.neu.edu.vn">1235582@st.neu.edu.vn</a></td>
+            </table>
+        </div>
+
+        <!-- Kiến thức đã tích lũy -->
+        <div class="section">
+            <h2>🎓 Kiến thức đã tích lũy</h2>
+            <h3>Kỹ năng tin học:</h3>
+            <ul>
+                <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+            </ul>
+
+            <h3>Lập trình:</h3>
+            <ul>
+                <li>Python: đang học</li>
+                <li>HTML: đang học</li>
+            </ul>
+            <h3>Kiến thức về cơ sở dữ liệu:</h3>
+            <ul>
+                <li>Thiết kế cơ sở dữ liệu</li>
+                <li>Truy vấn thông tin trong cơ sở dữ liệu</li>
+            </ul>
+        </div>
+
+        <!-- Sở thích -->
+        <div class="section">
+            <h2>❤️ Sở thích</h2>
+
+            <h3>Xem phim:</h3>
+            <ul>
+                <li>Fan cứng của Nhà tôi 3 đời xem phim Hàn</li>
+                <li>Xem tất cả thể loại phim Hàn, Trung, Nhật, Thái,..</li>
+            </ul>
+
+            <h3>Nghe nhạc:</h3>
+            <ul>
+                <li>Fan Kpop Gen 3 đặc biệt là Twice, Got7, IOI...</li>
+            </ul>
+
+            <h3>Hoạt động khác:</h3>
+            <ul>
+                <li>Đọc sách về lịch sử, vũ trụ,...</li>
+                <li>Đi dạo</li>
+                <li>Tham gia hoạt động thiện nguyện</li>
+            </ul>
+        </div>
+
+        <!-- Ước mơ -->
+        <div class="section">
+            <h2>🌟 Ước mơ và mục tiêu</h2>
+            <div class="highlight">
+                <p><strong>Ước mơ ngắn hạn:</strong> Thoát khỏi trường N</p>
+                <p><strong>Ước mơ dài hạn:</strong> Debut làm idol Kpop :></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;">
+            <p><small>Hết gòi đóa, byebye 😊</small></p>
+        </div>
+    </div>
+</body>
+
+</html>
