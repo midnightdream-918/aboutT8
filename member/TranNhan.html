@@ -4,12 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tran Nhan Preview</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
+        header{
+            width: 80%;
+            height: 120px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            text-align: center;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            background-color: white;
+        }
+        header h1{
+            font-size: 36px;
+            color: #333;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+        }
+        a{
+            text-decoration: none;
+        }
+        nav a{
+            font-size: 24px;
+            color: black;
+            transition: all 0.3s ease-in-out;
+            width: 200px;
+            height: 20px;
+        }
+        nav a:hover{
+            color: #ffffff;
+            background-color: black;
+            padding: 20px 20px;
+            border-radius: 5px;
+        }
+        .container{
+            margin-top: 180px;
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        section{
+            height: 400px;
+            width: 120%;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            scroll-margin-top: 150px; /* Khoảng cách với header cố định */
+            font-size: 22px;
+        }
+        p, h2{
+            margin-bottom: 2px;
+        }
+        #Banthan{
+            display: flex;
+            flex-direction: row;
+            gap: 20%;
+            font-size: 24px;
+        }
+        #myself{
+            width: 395px;
+            height: 390px;
+            border-radius: 50%;
+            margin-left: 60px;
+        }
+        footer{
+            width: 80%;
+            height: 100px;
+            display: flex;
+            background-color: beige;
+            align-items: center;
+            flex-direction: column;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <h1>Tran Nhan</h1>
         <nav>
-            
+            <a href="#Banthan">Bản thân</a>
+            <a href="#Kienthuc">Kiến thức</a>
+            <a href="#Sothich">Sở thích</a>
+            <a href="#Muctieu">Mục tiêu</a>
         </nav>
     </header>
+    <div class="container">
+        <section id="Banthan">
+            <img src="../image/TranNhan.jpg" alt="Tran Nhan" id="myself">
+            <div class="info">
+            <h2>Thông tin cá nhân</h2>
+            <p>Họ và tên: Trần Ngọcgọc Nhân</p>
+            <p>Ngày sinh: 07/05/2005</p>
+            <p>Địa chỉ: Xã Nam Phong, Thành Phố Nam Định, Nam Định</p>
+            <p>Số điện thoại: 0946083926</p>
+            <p>Email:11236173@st.neu.edu.vn</p>
+            </div>
+        </section>
+        <section id="Kienthuc">
+            <h2>Kiến thức</h2>
+            <p>Ngoại ngữ: 5.5 IELTS</p>
+            <p>Trình độ:</p>
+            <ul>
+                <li>Ngôn ngữ lập trình: C, C++, Python(đã từng thử qua)</li>
+                <li>Cơ sở dữ liệu: SQL Server</li>
+                <li>Framework: React(đã từng tiếp xúc)</li>
+                <li>Công nghệ web: HTML, CSS, JavaScript</li>
+            </ul>
+        </section>
+        <section id="Sothich">
+            <h2>Sở thích</h2>
+            <p>Nghe nhạc: Mình thích nghe nhạc, đặc biệt là các thể loại như: Lofi, Hiphop, Jpop</p>
+            <p>Xem Anime: Mình là một fan nghiền của Anime, và mình xem Anime cũng sắp dc chục năm rồi:></p>
+            <p>Chơi Game: Starter Pack của mọi thằng con trai, không có gì để nói. Mình chơi chủ yếu là các Game:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/@ZZZ_JP">Zenless Zone Zero</a></li>
+                <li><a href="https://www.youtube.com/@Houkaistarrail_jp">Honkai Star Rail</a></li>
+                <li><a href="https://www.youtube.com/@NIKKEJAPAN">Nikke</a></li>
+                <li><a href="https://www.youtube.com/@BlueArchive_JP">Blue Archive</a></li>
+                <li><a href="https://www.youtube.com/@play_efootball">eFootball(PES)</a></li>
+                <li><a href="https://www.youtube.com/@RobTopGames">Geometry Dash</a></li>
+            </ul>
+        </section>
+        <section id="Muctieu">
+            <h2>Mục tiêu</h2>
+            <p>Ngắn hạn</p>
+            <ul>
+                <li>Đạt được bằng IELTS 6.0 trở lên</li>
+                <li>Ra trường với bằng Giỏi</li>
+                <li>Học tập, tham gia và hoàn thành nhiều dự án hơn!!!</li>
+            </ul>
+            <p>Dài hạn</p>
+            <ul>
+                <li>Trở thành một lập trình viên giỏi</li>
+                <li>Tương lai lương 15, 20tr 1 tháng để ăn chơi đua đòi cho thoải mái:D</li>
+                <li>Phải sang được Nhật ít nhất 1 lần trong đời!!!</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Tran Nhan.</p>
+        <p>Hope we have best luck everyday!</p>
+    </footer>
 </body>
 </html>
